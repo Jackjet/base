@@ -14,3 +14,4 @@ D:\base\新建文件夹\Novots.Code\bin\Debug\NPOI.OOXML.xml
 D:\base\新建文件夹\Novots.Code\bin\Debug\NPOI.OpenXml4Net.xml
 D:\base\新建文件夹\Novots.Code\obj\Debug\Conan.Code.dll
 D:\base\新建文件夹\Novots.Code\obj\Debug\Conan.Code.pdb
+D:\base\新建文件夹\Novots.Code\obj\Debug\Conan.Code.csprojResolveAssemblyReference.cache
