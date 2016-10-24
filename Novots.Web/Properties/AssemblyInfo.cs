@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过下列特性集
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Novots快速开发平台")]
-[assembly: AssemblyDescription("Novots快速开发平台")]
+[assembly: AssemblyTitle("Conan快速开发平台")]
+[assembly: AssemblyDescription("Conan快速开发平台")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Novots团队")]
-[assembly: AssemblyProduct("Novots快速开发平台（www.Novots.com）")]
-[assembly: AssemblyCopyright("Copyright © Novots 2016")]
-[assembly: AssemblyTrademark("Novots.Framework")]
+[assembly: AssemblyCompany("Conan团队")]
+[assembly: AssemblyProduct("Conan快速开发平台（www.Conan.com）")]
+[assembly: AssemblyCopyright("Copyright © Conan 2016")]
+[assembly: AssemblyTrademark("Conan.Framework")]
 [assembly: AssemblyCulture("")]
 
 // 将 ComVisible 设置为 false 会使此程序集中的类型

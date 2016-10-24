@@ -1,17 +1,17 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Code;
-using Novots.Domain.Entity.SystemSecurity;
-using Novots.Domain.IRepository.SystemSecurity;
-using Novots.Repository.SystemSecurity;
+using Conan.Code;
+using Conan.Domain.Entity.SystemSecurity;
+using Conan.Domain.IRepository.SystemSecurity;
+using Conan.Repository.SystemSecurity;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Novots.Application.SystemSecurity
+namespace Conan.Application.SystemSecurity
 {
     public class FilterIPApp
     {

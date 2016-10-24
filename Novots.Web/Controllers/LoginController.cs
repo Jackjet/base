@@ -1,22 +1,22 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Domain.Entity.SystemSecurity;
-using Novots.Application.SystemSecurity;
+using Conan.Domain.Entity.SystemSecurity;
+using Conan.Application.SystemSecurity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Novots.Domain.Entity.SystemManage;
-using Novots.Application.SystemManage;
-using Novots.Code;
-using Novots.Application;
+using Conan.Domain.Entity.SystemManage;
+using Conan.Application.SystemManage;
+using Conan.Code;
+using Conan.Application;
 
-namespace Novots.Web.Controllers
+namespace Conan.Web.Controllers
 {
     public class LoginController : Controller
     {
@@ -57,7 +57,7 @@ namespace Novots.Web.Controllers
             logEntity.F_Type = DbLogType.Login.ToString();
             try
             {
-                if (Session["Novots_session_verifycode"].IsEmpty() || Md5.md5(code.ToLower(), 16) != Session["Novots_session_verifycode"].ToString())
+                if (Session["Conan_session_verifycode"].IsEmpty() || Md5.md5(code.ToLower(), 16) != Session["Conan_session_verifycode"].ToString())
                 {
                     throw new Exception("验证码错误，请重新输入");
                 }

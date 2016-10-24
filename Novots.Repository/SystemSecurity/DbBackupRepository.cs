@@ -1,17 +1,17 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Code;
-using Novots.Data;
-using Novots.Data.Extensions;
-using Novots.Domain.Entity.SystemSecurity;
-using Novots.Domain.IRepository.SystemSecurity;
-using Novots.Repository.SystemSecurity;
+using Conan.Code;
+using Conan.Data;
+using Conan.Data.Extensions;
+using Conan.Domain.Entity.SystemSecurity;
+using Conan.Domain.IRepository.SystemSecurity;
+using Conan.Repository.SystemSecurity;
 
-namespace Novots.Repository.SystemSecurity
+namespace Conan.Repository.SystemSecurity
 {
     public class DbBackupRepository : RepositoryBase<DbBackupEntity>, IDbBackupRepository
     {

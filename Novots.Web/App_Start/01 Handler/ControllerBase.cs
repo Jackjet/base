@@ -1,7 +1,7 @@
-﻿using Novots.Code;
+﻿using Conan.Code;
 using System.Web.Mvc;
 
-namespace Novots.Web
+namespace Conan.Web
 {
     [HandlerLogin]
     public abstract class ControllerBase : Controller

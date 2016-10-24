@@ -1,13 +1,13 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Data;
-using Novots.Domain.Entity.SystemManage;
+using Conan.Data;
+using Conan.Domain.Entity.SystemManage;
 
-namespace Novots.Domain.IRepository.SystemManage
+namespace Conan.Domain.IRepository.SystemManage
 {
     public interface IAreaRepository : IRepositoryBase<AreaEntity>
     {

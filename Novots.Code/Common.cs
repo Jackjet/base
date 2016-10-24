@@ -1,15 +1,15 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace Novots.Code
+namespace Conan.Code
 {
     /// <summary>
     /// 常用公共类

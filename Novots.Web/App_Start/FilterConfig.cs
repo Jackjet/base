@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Novots.Web
+namespace Conan.Web
 {
     public class FilterConfig
     {

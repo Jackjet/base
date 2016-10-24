@@ -1,8 +1,8 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
 using System.Collections.Generic;
 using System.Net;
@@ -11,7 +11,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Web;
 
-namespace Novots.Code
+namespace Conan.Code
 {
     /// <summary>
     /// 网络操作

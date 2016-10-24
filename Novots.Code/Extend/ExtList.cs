@@ -1,13 +1,13 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Novots.Code.Extend
+namespace Conan.Code.Extend
 {
     public static class ExtList
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{DB19CE03-C307-43FE-A209-08AA4AE10E21}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Novots.Code</RootNamespace>
-    <AssemblyName>Novots.Code</AssemblyName>
+    <RootNamespace>Conan.Code</RootNamespace>
+    <AssemblyName>Conan.Code</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

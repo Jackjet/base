@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Novots.Web.Areas.SystemManage
+namespace Conan.Web.Areas.SystemManage
 {
     public class SystemManageAreaRegistration : AreaRegistration
     {
@@ -18,7 +18,7 @@ namespace Novots.Web.Areas.SystemManage
               this.AreaName + "_Default",
               this.AreaName + "/{controller}/{action}/{id}",
               new { area = this.AreaName, controller = "Home", action = "Index", id = UrlParameter.Optional },
-              new string[] { "Novots.Web.Areas." + this.AreaName + ".Controllers" }
+              new string[] { "Conan.Web.Areas." + this.AreaName + ".Controllers" }
             );
         }
     }

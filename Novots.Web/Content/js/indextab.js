@@ -1,5 +1,5 @@
 (function ($) {
-    $.Novotstab = {
+    $.Conantab = {
         requestFullScreen: function () {
             var de = document.documentElement;
             if (de.requestFullscreen) {
@@ -22,7 +22,7 @@
         },
         refreshTab: function () {
             var currentId = $('.page-tabs-content').find('.active').attr('data-id');
-            var target = $('.Novots_iframe[data-id="' + currentId + '"]');
+            var target = $('.Conan_iframe[data-id="' + currentId + '"]');
             var url = target.attr('src');
             $.loading(true);
             target.attr('src', url).load(function () {
@@ -32,19 +32,19 @@
         activeTab: function () {
             var currentId = $(this).data('id');
             if (!$(this).hasClass('active')) {
-                $('.mainContent .Novots_iframe').each(function () {
+                $('.mainContent .Conan_iframe').each(function () {
                     if ($(this).data('id') == currentId) {
-                        $(this).show().siblings('.Novots_iframe').hide();
+                        $(this).show().siblings('.Conan_iframe').hide();
                         return false;
                     }
                 });
                 $(this).addClass('active').siblings('.menuTab').removeClass('active');
-                $.Novotstab.scrollToTab(this);
+                $.Conantab.scrollToTab(this);
             }
         },
         closeOtherTabs: function () {
             $('.page-tabs-content').children("[data-id]").find('.fa-remove').parents('a').not(".active").each(function () {
-                $('.Novots_iframe[data-id="' + $(this).data('id') + '"]').remove();
+                $('.Conan_iframe[data-id="' + $(this).data('id') + '"]').remove();
                 $(this).remove();
             });
             $('.page-tabs-content').css("margin-left", "0");
@@ -56,9 +56,9 @@
                 if ($(this).parents('.menuTab').next('.menuTab').size()) {
                     var activeId = $(this).parents('.menuTab').next('.menuTab:eq(0)').data('id');
                     $(this).parents('.menuTab').next('.menuTab:eq(0)').addClass('active');
-                    $('.mainContent .Novots_iframe').each(function () {
+                    $('.mainContent .Conan_iframe').each(function () {
                         if ($(this).data('id') == activeId) {
-                            $(this).show().siblings('.Novots_iframe').hide();
+                            $(this).show().siblings('.Conan_iframe').hide();
                             return false;
                         }
                     });
@@ -69,7 +69,7 @@
                         }, "fast");
                     }
                     $(this).parents('.menuTab').remove();
-                    $('.mainContent .Novots_iframe').each(function () {
+                    $('.mainContent .Conan_iframe').each(function () {
                         if ($(this).data('id') == closeTabId) {
                             $(this).remove();
                             return false;
@@ -79,14 +79,14 @@
                 if ($(this).parents('.menuTab').prev('.menuTab').size()) {
                     var activeId = $(this).parents('.menuTab').prev('.menuTab:last').data('id');
                     $(this).parents('.menuTab').prev('.menuTab:last').addClass('active');
-                    $('.mainContent .Novots_iframe').each(function () {
+                    $('.mainContent .Conan_iframe').each(function () {
                         if ($(this).data('id') == activeId) {
-                            $(this).show().siblings('.Novots_iframe').hide();
+                            $(this).show().siblings('.Conan_iframe').hide();
                             return false;
                         }
                     });
                     $(this).parents('.menuTab').remove();
-                    $('.mainContent .Novots_iframe').each(function () {
+                    $('.mainContent .Conan_iframe').each(function () {
                         if ($(this).data('id') == closeTabId) {
                             $(this).remove();
                             return false;
@@ -96,13 +96,13 @@
             }
             else {
                 $(this).parents('.menuTab').remove();
-                $('.mainContent .Novots_iframe').each(function () {
+                $('.mainContent .Conan_iframe').each(function () {
                     if ($(this).data('id') == closeTabId) {
                         $(this).remove();
                         return false;
                     }
                 });
-                $.Novotstab.scrollToTab($('.menuTab.active'));
+                $.Conantab.scrollToTab($('.menuTab.active'));
             }
             return false;
         },
@@ -110,7 +110,7 @@
             $(".open>.dropdown-menu").hide();
             var dataId = $(this).attr('data-id');
             if (dataId != "") {
-                top.$.cookie('Novots_currentmoduleid', dataId, { path: "/" });
+                top.$.cookie('Conan_currentmoduleid', dataId, { path: "/" });
             }
             var dataUrl = $(this).attr('href');
             var menuName = $.trim($(this).text());
@@ -122,10 +122,10 @@
                 if ($(this).data('id') == dataUrl) {
                     if (!$(this).hasClass('active')) {
                         $(this).addClass('active').siblings('.menuTab').removeClass('active');
-                        $.Novotstab.scrollToTab(this);
-                        $('.mainContent .Novots_iframe').each(function () {
+                        $.Conantab.scrollToTab(this);
+                        $('.mainContent .Conan_iframe').each(function () {
                             if ($(this).data('id') == dataUrl) {
-                                $(this).show().siblings('.Novots_iframe').hide();
+                                $(this).show().siblings('.Conan_iframe').hide();
                                 return false;
                             }
                         });
@@ -137,21 +137,21 @@
             if (flag) {
                 var str = '<a href="javascript:;" class="active menuTab" data-id="' + dataUrl + '">' + menuName + ' <i class="fa fa-remove"></i></a>';
                 $('.menuTab').removeClass('active');
-                var str1 = '<iframe class="Novots_iframe" id="iframe' + dataId + '" name="iframe' + dataId + '"  width="100%" height="100%" src="' + dataUrl + '" frameborder="0" data-id="' + dataUrl + '" seamless></iframe>';
-                $('.mainContent').find('iframe.Novots_iframe').hide();
+                var str1 = '<iframe class="Conan_iframe" id="iframe' + dataId + '" name="iframe' + dataId + '"  width="100%" height="100%" src="' + dataUrl + '" frameborder="0" data-id="' + dataUrl + '" seamless></iframe>';
+                $('.mainContent').find('iframe.Conan_iframe').hide();
                 $('.mainContent').append(str1);
                 $.loading(true);
                 $('.mainContent iframe:visible').load(function () {
                     $.loading(false);
                 });
                 $('.menuTabs .page-tabs-content').append(str);
-                $.Novotstab.scrollToTab($('.menuTab.active'));
+                $.Conantab.scrollToTab($('.menuTab.active'));
             }
             return false;
         },
         scrollTabRight: function () {
             var marginLeftVal = Math.abs(parseInt($('.page-tabs-content').css('margin-left')));
-            var tabOuterWidth = $.Novotstab.calSumWidth($(".content-tabs").children().not(".menuTabs"));
+            var tabOuterWidth = $.Conantab.calSumWidth($(".content-tabs").children().not(".menuTabs"));
             var visibleWidth = $(".content-tabs").outerWidth(true) - tabOuterWidth;
             var scrollVal = 0;
             if ($(".page-tabs-content").width() < visibleWidth) {
@@ -168,7 +168,7 @@
                     offsetVal += $(tabElement).outerWidth(true);
                     tabElement = $(tabElement).next();
                 }
-                scrollVal = $.Novotstab.calSumWidth($(tabElement).prevAll());
+                scrollVal = $.Conantab.calSumWidth($(tabElement).prevAll());
                 if (scrollVal > 0) {
                     $('.page-tabs-content').animate({
                         marginLeft: 0 - scrollVal + 'px'
@@ -178,7 +178,7 @@
         },
         scrollTabLeft: function () {
             var marginLeftVal = Math.abs(parseInt($('.page-tabs-content').css('margin-left')));
-            var tabOuterWidth = $.Novotstab.calSumWidth($(".content-tabs").children().not(".menuTabs"));
+            var tabOuterWidth = $.Conantab.calSumWidth($(".content-tabs").children().not(".menuTabs"));
             var visibleWidth = $(".content-tabs").outerWidth(true) - tabOuterWidth;
             var scrollVal = 0;
             if ($(".page-tabs-content").width() < visibleWidth) {
@@ -191,12 +191,12 @@
                     tabElement = $(tabElement).next();
                 }
                 offsetVal = 0;
-                if ($.Novotstab.calSumWidth($(tabElement).prevAll()) > visibleWidth) {
+                if ($.Conantab.calSumWidth($(tabElement).prevAll()) > visibleWidth) {
                     while ((offsetVal + $(tabElement).outerWidth(true)) < (visibleWidth) && tabElement.length > 0) {
                         offsetVal += $(tabElement).outerWidth(true);
                         tabElement = $(tabElement).prev();
                     }
-                    scrollVal = $.Novotstab.calSumWidth($(tabElement).prevAll());
+                    scrollVal = $.Conantab.calSumWidth($(tabElement).prevAll());
                 }
             }
             $('.page-tabs-content').animate({
@@ -204,8 +204,8 @@
             }, "fast");
         },
         scrollToTab: function (element) {
-            var marginLeftVal = $.Novotstab.calSumWidth($(element).prevAll()), marginRightVal = $.Novotstab.calSumWidth($(element).nextAll());
-            var tabOuterWidth = $.Novotstab.calSumWidth($(".content-tabs").children().not(".menuTabs"));
+            var marginLeftVal = $.Conantab.calSumWidth($(element).prevAll()), marginRightVal = $.Conantab.calSumWidth($(element).nextAll());
+            var tabOuterWidth = $.Conantab.calSumWidth($(".content-tabs").children().not(".menuTabs"));
             var visibleWidth = $(".content-tabs").outerWidth(true) - tabOuterWidth;
             var scrollVal = 0;
             if ($(".page-tabs-content").outerWidth() < visibleWidth) {
@@ -234,27 +234,27 @@
             return width;
         },
         init: function () {
-            $('.menuItem').on('click', $.Novotstab.addTab);
-            $('.menuTabs').on('click', '.menuTab i', $.Novotstab.closeTab);
-            $('.menuTabs').on('click', '.menuTab', $.Novotstab.activeTab);
-            $('.tabLeft').on('click', $.Novotstab.scrollTabLeft);
-            $('.tabRight').on('click', $.Novotstab.scrollTabRight);
-            $('.tabReload').on('click', $.Novotstab.refreshTab);
+            $('.menuItem').on('click', $.Conantab.addTab);
+            $('.menuTabs').on('click', '.menuTab i', $.Conantab.closeTab);
+            $('.menuTabs').on('click', '.menuTab', $.Conantab.activeTab);
+            $('.tabLeft').on('click', $.Conantab.scrollTabLeft);
+            $('.tabRight').on('click', $.Conantab.scrollTabRight);
+            $('.tabReload').on('click', $.Conantab.refreshTab);
             $('.tabCloseCurrent').on('click', function () {
                 $('.page-tabs-content').find('.active i').trigger("click");
             });
             $('.tabCloseAll').on('click', function () {
                 $('.page-tabs-content').children("[data-id]").find('.fa-remove').each(function () {
-                    $('.Novots_iframe[data-id="' + $(this).data('id') + '"]').remove();
+                    $('.Conan_iframe[data-id="' + $(this).data('id') + '"]').remove();
                     $(this).parents('a').remove();
                 });
                 $('.page-tabs-content').children("[data-id]:first").each(function () {
-                    $('.Novots_iframe[data-id="' + $(this).data('id') + '"]').show();
+                    $('.Conan_iframe[data-id="' + $(this).data('id') + '"]').show();
                     $(this).addClass("active");
                 });
                 $('.page-tabs-content').css("margin-left", "0");
             });
-            $('.tabCloseOther').on('click', $.Novotstab.closeOtherTabs);
+            $('.tabCloseOther').on('click', $.Conantab.closeOtherTabs);
             $('.fullscreen').on('click', function () {
                 if (!$(this).attr('fullscreen')) {
                     $(this).attr('fullscreen', 'true');
@@ -267,6 +267,6 @@
         }
     };
     $(function () {
-        $.Novotstab.init();
+        $.Conantab.init();
     });
 })(jQuery);

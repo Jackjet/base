@@ -1,8 +1,8 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Novots.Code
+namespace Conan.Code
 {
     public class VerifyCode
     {
@@ -36,7 +36,7 @@ namespace Novots.Code
                 chkCode += character[rnd.Next(character.Length)];
             }
             //写入Session、验证码加密
-            WebHelper.WriteSession("Novots_session_verifycode", Md5.md5(chkCode.ToLower(), 16));
+            WebHelper.WriteSession("Conan_session_verifycode", Md5.md5(chkCode.ToLower(), 16));
             //创建画布
             Bitmap bmp = new Bitmap(codeW, codeH);
             Graphics g = Graphics.FromImage(bmp);

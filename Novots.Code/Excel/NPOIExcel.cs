@@ -1,8 +1,8 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
@@ -10,7 +10,7 @@ using NPOI.SS.Util;
 using System.Data;
 using System.IO;
 
-namespace Novots.Code.Excel
+namespace Conan.Code.Excel
 {
     public class NPOIExcel
     {

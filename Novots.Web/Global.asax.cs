@@ -1,8 +1,8 @@
-﻿using Novots.Code;
+﻿using Conan.Code;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Novots.Web
+namespace Conan.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {

@@ -1,17 +1,17 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Code;
-using Novots.Domain.Entity.SystemManage;
-using Novots.Domain.IRepository.SystemManage;
-using Novots.Repository.SystemManage;
+using Conan.Code;
+using Conan.Domain.Entity.SystemManage;
+using Conan.Domain.IRepository.SystemManage;
+using Conan.Repository.SystemManage;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Novots.Application.SystemManage
+namespace Conan.Application.SystemManage
 {
     public class DutyApp
     {

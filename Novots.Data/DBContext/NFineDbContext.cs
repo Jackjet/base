@@ -1,8 +1,8 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
 using System;
 using System.Data.Entity;
@@ -10,12 +10,12 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Reflection;
 
-namespace Novots.Data
+namespace Conan.Data
 {
-    public class NovotsDbContext : DbContext
+    public class ConanDbContext : DbContext
     {
-        public NovotsDbContext()
-            : base("NovotsDbContext")
+        public ConanDbContext()
+            : base("ConanDbContext")
         {
             this.Configuration.AutoDetectChangesEnabled = false;
             this.Configuration.ValidateOnSaveEnabled = false;
@@ -25,7 +25,7 @@ namespace Novots.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            string assembleFileName = Assembly.GetExecutingAssembly().CodeBase.Replace("Novots.Data.DLL", "Novots.Mapping.DLL").Replace("file:///", "");
+            string assembleFileName = Assembly.GetExecutingAssembly().CodeBase.Replace("Conan.Data.DLL", "Conan.Mapping.DLL").Replace("file:///", "");
             Assembly asm = Assembly.LoadFile(assembleFileName);
             var typesToRegister = asm.GetTypes()
             .Where(type => !String.IsNullOrEmpty(type.Namespace))

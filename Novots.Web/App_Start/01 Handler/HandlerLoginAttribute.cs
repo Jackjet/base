@@ -1,7 +1,7 @@
-﻿using Novots.Code;
+﻿using Conan.Code;
 using System.Web.Mvc;
 
-namespace Novots.Web
+namespace Conan.Web
 {
     public class HandlerLoginAttribute : AuthorizeAttribute
     {
@@ -18,7 +18,7 @@ namespace Novots.Web
             }
             if (OperatorProvider.Provider.GetCurrent() == null)
             {
-                WebHelper.WriteCookie("Novots_login_error", "overdue");
+                WebHelper.WriteCookie("Conan_login_error", "overdue");
                 filterContext.HttpContext.Response.Write("<script>top.location.href = '/Login/Index';</script>");
                 return;
             }

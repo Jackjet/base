@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Novots.Web</RootNamespace>
-    <AssemblyName>Novots.Web</AssemblyName>
+    <RootNamespace>Conan.Web</RootNamespace>
+    <AssemblyName>Conan.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -419,21 +419,21 @@
     <Content Include="Configs\database.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Novots.Application\Novots.Application.csproj">
+    <ProjectReference Include="..\Novots.Application\Conan.Application.csproj">
       <Project>{f2035ee2-b73d-4fb8-a433-cab465de6a2a}</Project>
-      <Name>Novots.Application</Name>
+      <Name>Conan.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Novots.Code\Novots.Code.csproj">
+    <ProjectReference Include="..\Novots.Code\Conan.Code.csproj">
       <Project>{db19ce03-c307-43fe-a209-08aa4ae10e21}</Project>
-      <Name>Novots.Code</Name>
+      <Name>Conan.Code</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Novots.Domain\Novots.Domain.csproj">
+    <ProjectReference Include="..\Novots.Domain\Conan.Domain.csproj">
       <Project>{7dc886cd-b8a0-44e8-aadd-57fcb0cfecb8}</Project>
-      <Name>Novots.Domain</Name>
+      <Name>Conan.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Novots.Mapping\Novots.Mapping.csproj">
+    <ProjectReference Include="..\Novots.Mapping\Conan.Mapping.csproj">
       <Project>{4e642cbe-f6c5-4cb9-9474-6b349652fe77}</Project>
-      <Name>Novots.Mapping</Name>
+      <Name>Conan.Mapping</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

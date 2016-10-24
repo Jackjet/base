@@ -1,17 +1,17 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Code;
+using Conan.Code;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Novots.Web.Areas.ExampleManage.Controllers
+namespace Conan.Web.Areas.ExampleManage.Controllers
 {
     public class SendMailController : ControllerBase
     {
@@ -25,7 +25,7 @@ namespace Novots.Web.Areas.ExampleManage.Controllers
             mail.MailServer = Configs.GetValue("MailHost");
             mail.MailUserName = Configs.GetValue("MailUserName");
             mail.MailPassword = Configs.GetValue("MailPassword");
-            mail.MailName = "Novots快速开发平台";
+            mail.MailName = "Conan快速开发平台";
             mail.Send(account, title, content);
             return Success("发送成功。");
         }

@@ -1,10 +1,10 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-namespace Novots.Code
+namespace Conan.Code
 {
     public class OperatorProvider
     {
@@ -12,7 +12,7 @@ namespace Novots.Code
         {
             get { return new OperatorProvider(); }
         }
-        private string LoginUserKey = "Novots_loginuserkey_2016";
+        private string LoginUserKey = "Conan_loginuserkey_2016";
         private string LoginProvider = Configs.GetValue("LoginProvider");
 
         public OperatorModel GetCurrent()
@@ -38,8 +38,8 @@ namespace Novots.Code
             {
                 WebHelper.WriteSession(LoginUserKey, DESEncrypt.Encrypt(operatorModel.ToJson()));
             }
-            WebHelper.WriteCookie("Novots_mac", Md5.md5(Net.GetMacByNetworkInterface().ToJson(), 32));
-            WebHelper.WriteCookie("Novots_licence", Licence.GetLicence());
+            WebHelper.WriteCookie("Conan_mac", Md5.md5(Net.GetMacByNetworkInterface().ToJson(), 32));
+            WebHelper.WriteCookie("Conan_licence", Licence.GetLicence());
         }
         public void RemoveCurrent()
         {

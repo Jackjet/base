@@ -1,10 +1,10 @@
-﻿using Novots.Application.SystemManage;
-using Novots.Code;
+﻿using Conan.Application.SystemManage;
+using Conan.Code;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Novots.Web
+namespace Conan.Web
 {
     public class HandlerAuthorizeAttribute : ActionFilterAttribute
     {
@@ -35,7 +35,7 @@ namespace Novots.Web
         {
             var operatorProvider = OperatorProvider.Provider.GetCurrent();
             var roleId = operatorProvider.RoleId;
-            var moduleId = WebHelper.GetCookie("Novots_currentmoduleid");
+            var moduleId = WebHelper.GetCookie("Conan_currentmoduleid");
             var action = HttpContext.Current.Request.ServerVariables["SCRIPT_NAME"].ToString();
             return new RoleAuthorizeApp().ActionValidate(roleId, moduleId, action);
         }

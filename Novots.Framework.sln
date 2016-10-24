@@ -1,27 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novots.Application", "Novots.Application\Novots.Application.csproj", "{F2035EE2-B73D-4FB8-A433-CAB465DE6A2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conan.Application", "Novots.Application\Conan.Application.csproj", "{F2035EE2-B73D-4FB8-A433-CAB465DE6A2A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Novots.Common", "Novots.Common", "{DE2A9A88-E15C-4E3D-AB28-B97879149854}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conan.Common", "Conan.Common", "{DE2A9A88-E15C-4E3D-AB28-B97879149854}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Novots.UI", "Novots.UI", "{748B2C30-CB38-49EE-AD5A-391272786FA7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conan.UI", "Conan.UI", "{748B2C30-CB38-49EE-AD5A-391272786FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novots.Web", "Novots.Web\Novots.Web.csproj", "{BEF1F2C9-1903-4AC4-93BD-08452BFA37A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conan.Web", "Novots.Web\Conan.Web.csproj", "{BEF1F2C9-1903-4AC4-93BD-08452BFA37A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novots.Domain", "Novots.Domain\Novots.Domain.csproj", "{7DC886CD-B8A0-44E8-AADD-57FCB0CFECB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conan.Domain", "Novots.Domain\Conan.Domain.csproj", "{7DC886CD-B8A0-44E8-AADD-57FCB0CFECB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novots.Code", "Novots.Code\Novots.Code.csproj", "{DB19CE03-C307-43FE-A209-08AA4AE10E21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conan.Code", "Novots.Code\Conan.Code.csproj", "{DB19CE03-C307-43FE-A209-08AA4AE10E21}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Novots.AppService", "Novots.AppService", "{F2C0CC86-CD58-4803-B43A-10FA559A355B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conan.AppService", "Conan.AppService", "{F2C0CC86-CD58-4803-B43A-10FA559A355B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novots.Repository", "Novots.Repository\Novots.Repository.csproj", "{875233BF-EA15-49E0-9A9C-77884A897FF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conan.Repository", "Novots.Repository\Conan.Repository.csproj", "{875233BF-EA15-49E0-9A9C-77884A897FF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novots.Data", "Novots.Data\Novots.Data.csproj", "{F71003E8-A836-48F4-9DF6-DF9095CEBD18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conan.Data", "Novots.Data\Conan.Data.csproj", "{F71003E8-A836-48F4-9DF6-DF9095CEBD18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novots.Mapping", "Novots.Mapping\Novots.Mapping.csproj", "{4E642CBE-F6C5-4CB9-9474-6B349652FE77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conan.Mapping", "Novots.Mapping\Conan.Mapping.csproj", "{4E642CBE-F6C5-4CB9-9474-6B349652FE77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Mvc;
 
-namespace Novots.Web
+namespace Conan.Web
 {
     [AttributeUsage(AttributeTargets.Method)]
     public class HandlerAjaxOnlyAttribute : ActionMethodSelectorAttribute

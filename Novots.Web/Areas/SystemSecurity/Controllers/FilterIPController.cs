@@ -1,15 +1,15 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Application.SystemSecurity;
-using Novots.Code;
-using Novots.Domain.Entity.SystemSecurity;
+using Conan.Application.SystemSecurity;
+using Conan.Code;
+using Conan.Domain.Entity.SystemSecurity;
 using System.Web.Mvc;
 
-namespace Novots.Web.Areas.SystemSecurity.Controllers
+namespace Conan.Web.Areas.SystemSecurity.Controllers
 {
     public class FilterIPController : ControllerBase
     {

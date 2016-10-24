@@ -1,10 +1,10 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Code;
+using Conan.Code;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -14,11 +14,11 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace Novots.Data
+namespace Conan.Data
 {
     public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class,new()
     {
-        public NovotsDbContext dbcontext = new NovotsDbContext();
+        public ConanDbContext dbcontext = new ConanDbContext();
         public int Insert(TEntity entity)
         {
             dbcontext.Entry<TEntity>(entity).State = EntityState.Added;

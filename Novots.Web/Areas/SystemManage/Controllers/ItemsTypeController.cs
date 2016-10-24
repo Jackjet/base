@@ -1,17 +1,17 @@
 ﻿/*******************************************************************************
- * Copyright © 2016 Novots.Framework 版权所有
- * Author: Novots
- * Description: Novots快速开发平台
- * Website：http://www.Novots.com
+ * Copyright © 2016 Conan.Framework 版权所有
+ * Author: Conan
+ * Description: Conan快速开发平台
+ * Website：http://www.Conan.com
 *********************************************************************************/
-using Novots.Application.SystemManage;
-using Novots.Code;
-using Novots.Domain.Entity.SystemManage;
+using Conan.Application.SystemManage;
+using Conan.Code;
+using Conan.Domain.Entity.SystemManage;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
-namespace Novots.Web.Areas.SystemManage.Controllers
+namespace Conan.Web.Areas.SystemManage.Controllers
 {
     public class ItemsTypeController : ControllerBase
     {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novots快速开发平台</title>
+    <title>Conan快速开发平台</title>
     <link href="~/Content/css/framework-font.css" rel="stylesheet" />
     <link href="~/Content/css/framework-login.css" rel="stylesheet" />
     <script src="~/Content/js/jquery/jquery-2.1.1.min.js"></script>
@@ -23,7 +23,7 @@
         <div class="container">
             <div class="logo">
                 <i class="fa fa-modx"></i>
-                <h1><span>Novots</span>快速开发平台</h1>
+                <h1><span>Conan</span>快速开发平台</h1>
             </div>
             <form class="form">
                 <div class="row">
@@ -63,9 +63,9 @@
         </ul>
     </div>
     <div class="copyright">
-        Novots开发团队出品
+        Conan开发团队出品
         <br>
-        Novots快速开发平台官方网站：http://www.Novots.com
+        Conan快速开发平台官方网站：http://www.Conan.com
     </div>
     <script type="text/javascript">
         (function ($) {
@@ -123,7 +123,7 @@
                     $("#switchCode").click(function () {
                         $("#imgcode").attr("src", "/Login/GetAuthCode?time=" + Math.random());
                     });
-                    var login_error = top.$.cookie('Novots_login_error');
+                    var login_error = top.$.cookie('Conan_login_error');
                     if (login_error != null) {
                         switch (login_error) {
                             case "overdue":
@@ -136,7 +136,7 @@
                                 $.login.formMessage("系统未知错误,请重新登录");
                                 break;
                         }
-                        top.$.cookie('Novots_login_error', '', { path: "/", expires: -1 });
+                        top.$.cookie('Conan_login_error', '', { path: "/", expires: -1 });
                     }
                     $("#login_button").click(function () {
                         $.login.loginClick();
