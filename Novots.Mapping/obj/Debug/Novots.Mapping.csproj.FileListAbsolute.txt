@@ -20,3 +20,25 @@ E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Mapping\bin\Debug\NPOI
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Mapping\obj\Debug\Novots.Mapping.csprojResolveAssemblyReference.cache
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Mapping\obj\Debug\Novots.Mapping.dll
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Mapping\obj\Debug\Novots.Mapping.pdb
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Novots.Mapping.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Novots.Mapping.pdb
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\EntityFramework.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\EntityFramework.SqlServer.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Novots.Domain.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Novots.Code.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Novots.Data.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Newtonsoft.Json.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\log4net.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\NPOI.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Novots.Domain.pdb
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\EntityFramework.xml
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\EntityFramework.SqlServer.xml
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Novots.Code.pdb
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Novots.Data.pdb
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\Newtonsoft.Json.xml
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\log4net.xml
+D:\base\新建文件夹\Novots.Mapping\bin\Debug\NPOI.xml
+D:\base\新建文件夹\Novots.Mapping\obj\Debug\Novots.Mapping.csprojResolveAssemblyReference.cache
+D:\base\新建文件夹\Novots.Mapping\obj\Debug\Novots.Mapping.dll
+D:\base\新建文件夹\Novots.Mapping\obj\Debug\Novots.Mapping.pdb

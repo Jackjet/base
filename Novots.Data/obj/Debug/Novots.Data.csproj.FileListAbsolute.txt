@@ -16,3 +16,21 @@ E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Data\bin\Debug\NPOI.xm
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Data\obj\Debug\Novots.Data.csprojResolveAssemblyReference.cache
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Data\obj\Debug\Novots.Data.dll
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Data\obj\Debug\Novots.Data.pdb
+D:\base\新建文件夹\Novots.Data\bin\Debug\Novots.Data.dll
+D:\base\新建文件夹\Novots.Data\bin\Debug\Novots.Data.pdb
+D:\base\新建文件夹\Novots.Data\bin\Debug\EntityFramework.dll
+D:\base\新建文件夹\Novots.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\base\新建文件夹\Novots.Data\bin\Debug\Novots.Code.dll
+D:\base\新建文件夹\Novots.Data\bin\Debug\Newtonsoft.Json.dll
+D:\base\新建文件夹\Novots.Data\bin\Debug\log4net.dll
+D:\base\新建文件夹\Novots.Data\bin\Debug\NPOI.dll
+D:\base\新建文件夹\Novots.Data\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\base\新建文件夹\Novots.Data\bin\Debug\Novots.Code.pdb
+D:\base\新建文件夹\Novots.Data\bin\Debug\EntityFramework.xml
+D:\base\新建文件夹\Novots.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\base\新建文件夹\Novots.Data\bin\Debug\Newtonsoft.Json.xml
+D:\base\新建文件夹\Novots.Data\bin\Debug\log4net.xml
+D:\base\新建文件夹\Novots.Data\bin\Debug\NPOI.xml
+D:\base\新建文件夹\Novots.Data\obj\Debug\Novots.Data.csprojResolveAssemblyReference.cache
+D:\base\新建文件夹\Novots.Data\obj\Debug\Novots.Data.dll
+D:\base\新建文件夹\Novots.Data\obj\Debug\Novots.Data.pdb

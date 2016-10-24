@@ -16,3 +16,21 @@ E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Domain\bin\Debug\Entit
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Domain\obj\Debug\Novots.Domain.csprojResolveAssemblyReference.cache
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Domain\obj\Debug\Novots.Domain.dll
 E:\Customer Doc\Novots\New folder\NovotsOA\project\Novots.Domain\obj\Debug\Novots.Domain.pdb
+D:\base\新建文件夹\Novots.Domain\bin\Debug\Novots.Domain.dll
+D:\base\新建文件夹\Novots.Domain\bin\Debug\Novots.Domain.pdb
+D:\base\新建文件夹\Novots.Domain\bin\Debug\Novots.Code.dll
+D:\base\新建文件夹\Novots.Domain\bin\Debug\Novots.Data.dll
+D:\base\新建文件夹\Novots.Domain\bin\Debug\Newtonsoft.Json.dll
+D:\base\新建文件夹\Novots.Domain\bin\Debug\log4net.dll
+D:\base\新建文件夹\Novots.Domain\bin\Debug\NPOI.dll
+D:\base\新建文件夹\Novots.Domain\bin\Debug\EntityFramework.dll
+D:\base\新建文件夹\Novots.Domain\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\base\新建文件夹\Novots.Domain\bin\Debug\Novots.Code.pdb
+D:\base\新建文件夹\Novots.Domain\bin\Debug\Novots.Data.pdb
+D:\base\新建文件夹\Novots.Domain\bin\Debug\Newtonsoft.Json.xml
+D:\base\新建文件夹\Novots.Domain\bin\Debug\log4net.xml
+D:\base\新建文件夹\Novots.Domain\bin\Debug\NPOI.xml
+D:\base\新建文件夹\Novots.Domain\bin\Debug\EntityFramework.xml
+D:\base\新建文件夹\Novots.Domain\obj\Debug\Novots.Domain.csprojResolveAssemblyReference.cache
+D:\base\新建文件夹\Novots.Domain\obj\Debug\Novots.Domain.dll
+D:\base\新建文件夹\Novots.Domain\obj\Debug\Novots.Domain.pdb
