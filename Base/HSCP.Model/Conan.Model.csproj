@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67F5859F-CD81-4549-BE09-8BD8E5BF4357}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conan.Model</RootNamespace>
+    <AssemblyName>Conan.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\Channel\ChannelOption.cs" />
+    <Compile Include="DTO\Channel\ChanneRelevancyViewModel.cs" />
+    <Compile Include="DTO\Channel\ChannelViewModel.cs" />
+    <Compile Include="DTO\Advertising\AdvertisingImageAddCmd.cs" />
+    <Compile Include="DTO\Advertising\AdvertisingViewModel.cs" />
+    <Compile Include="DTO\Advertising\AdvertisingAddCmd.cs" />
+    <Compile Include="DTO\Coupon\CouponExchange.cs" />
+    <Compile Include="DTO\Employee\EmployeeStoreVIew.cs" />
+    <Compile Include="DTO\Finance\WithdrawalViewModel.cs" />
+    <Compile Include="DTO\Finance\WithdrawalOption.cs" />
+    <Compile Include="DTO\Gift\GiftRechargeBindViewModel.cs" />
+    <Compile Include="DTO\Gift\GiftManageModels.cs" />
+    <Compile Include="DTO\Gift\GiftRechargeBindOption.cs" />
+    <Compile Include="DTO\Gift\ShareRedPacketsViewModel.cs" />
+    <Compile Include="DTO\Gift\GiftRechargeOption.cs" />
+    <Compile Include="DTO\Gift\GiftManageOption.cs" />
+    <Compile Include="DTO\Gift\GiftCouponViewModel.cs" />
+    <Compile Include="DTO\Gift\GiftRechargeThanViewModel.cs" />
+    <Compile Include="DTO\Gift\GiftRechargeGiveViewModel.cs" />
+    <Compile Include="DTO\Gift\GiftRechargeViewModel.cs" />
+    <Compile Include="DTO\Gift\GiftManageViewModel.cs" />
+    <Compile Include="DTO\Information\InformationOption.cs" />
+    <Compile Include="DTO\Information\InformationViewModel.cs" />
+    <Compile Include="DTO\Messages\MessageOption.cs" />
+    <Compile Include="DTO\Cars\CarAddCmd.cs" />
+    <Compile Include="DTO\Cars\CarOption.cs" />
+    <Compile Include="DTO\Cars\CarViewModel.cs" />
+    <Compile Include="DTO\CityArea\CityAreaViewModel.cs" />
+    <Compile Include="DTO\CityArea\CityAreaAddCmd.cs" />
+    <Compile Include="DTO\CityArea\CityAreaQuery.cs" />
+    <Compile Include="DTO\Coupon\CouponOption.cs" />
+    <Compile Include="DTO\Coupon\CouponGroupOption.cs" />
+    <Compile Include="DTO\Coupon\CouponGroupViewModel.cs" />
+    <Compile Include="DTO\Coupon\CouponView.cs" />
+    <Compile Include="DTO\Coupon\CouponViewModel.cs" />
+    <Compile Include="DTO\Dictionary\DictionarytAddCmd.cs" />
+    <Compile Include="DTO\Employee\EmployeeOption.cs" />
+    <Compile Include="DTO\Employee\EmployeeViewModel.cs" />
+    <Compile Include="DTO\Finance\InvoiceMemberOption.cs" />
+    <Compile Include="DTO\Finance\InvoiceMemberViewModel.cs" />
+    <Compile Include="DTO\Finance\InvoiceOption.cs" />
+    <Compile Include="DTO\Finance\InvoicePaymentOption.cs" />
+    <Compile Include="DTO\Finance\InvoiceViewModel.cs" />
+    <Compile Include="DTO\Finance\PaymentOption.cs" />
+    <Compile Include="DTO\Finance\InvoicePaymentViewModel.cs" />
+    <Compile Include="DTO\Finance\PaymentViewModel.cs" />
+    <Compile Include="DTO\Finance\CashJournalViewModel.cs" />
+    <Compile Include="DTO\Finance\CashJournalOption.cs" />
+    <Compile Include="DTO\Member\MemberCashJournalOption.cs" />
+    <Compile Include="DTO\Member\MemberCashJournalViewModel.cs" />
+    <Compile Include="DTO\Member\ChangePassword.cs" />
+    <Compile Include="DTO\Member\LimitLogin.cs" />
+    <Compile Include="DTO\Member\MemberCmd.cs" />
+    <Compile Include="DTO\Member\PlaceOrderMemberOption.cs" />
+    <Compile Include="DTO\Member\MemberOption.cs" />
+    <Compile Include="DTO\Member\MemberAddrOption.cs" />
+    <Compile Include="DTO\Member\PlaceOrderMemberViewModel.cs" />
+    <Compile Include="DTO\Member\MemberViewModel.cs" />
+    <Compile Include="DTO\Member\MemberAddrViewModel.cs" />
+    <Compile Include="DTO\Member\MemberOrderViewModel.cs" />
+    <Compile Include="DTO\Member\MemberOrderOption.cs" />
+    <Compile Include="DTO\Member\MemberCouponOption.cs" />
+    <Compile Include="DTO\Member\MemberCouponViewModel.cs" />
+    <Compile Include="DTO\Messages\SendModel.cs" />
+    <Compile Include="DTO\Messages\MessageViewModel.cs" />
+    <Compile Include="DTO\Order\GeoEmployeeIdlist.cs" />
+    <Compile Include="DTO\Order\cacelViewModel.cs" />
+    <Compile Include="DTO\Order\confirmViewModel.cs" />
+    <Compile Include="DTO\Order\OrderSettlementDto.cs" />
+    <Compile Include="DTO\Order\WxOrderBd.cs" />
+    <Compile Include="DTO\Order\WxMemberFamilyViewModel.cs" />
+    <Compile Include="DTO\Order\OrderMaterialView.cs" />
+    <Compile Include="DTO\Order\WxOrderDetailViewModel.cs" />
+    <Compile Include="DTO\Order\WxEvaluationViewModel.cs" />
+    <Compile Include="DTO\Order\OrderTkOption.cs" />
+    <Compile Include="DTO\Order\OrderTkViewModel.cs" />
+    <Compile Include="DTO\Other\IdName.cs" />
+    <Compile Include="DTO\Order\OrderSpAdd.cs" />
+    <Compile Include="DTO\Order\OrderWagesView.cs" />
+    <Compile Include="DTO\Order\SplitModel.cs" />
+    <Compile Include="DTO\Order\UpdateTimeViewModel.cs" />
+    <Compile Include="DTO\Order\OrderSubView.cs" />
+    <Compile Include="DTO\Order\OrderWaiterAdd.cs" />
+    <Compile Include="DTO\Order\PayAddModel.cs" />
+    <Compile Include="DTO\Order\SplitInfoViewModel.cs" />
+    <Compile Include="DTO\Order\OrderOption.cs" />
+    <Compile Include="DTO\Order\BaseInfoViewModel.cs" />
+    <Compile Include="DTO\Order\OrderPayViewModel.cs" />
+    <Compile Include="DTO\Order\OrderViewModel.cs" />
+    <Compile Include="DTO\Order\EnumOption.cs" />
+    <Compile Include="DTO\Order\OrderAdd.cs" />
+    <Compile Include="DTO\Products\Material\DepartmentOption.cs" />
+    <Compile Include="DTO\Products\Material\DepartmentViewModel.cs" />
+    <Compile Include="DTO\Products\Material\MaterialAddCmd.cs" />
+    <Compile Include="DTO\Products\Material\MaterialOption.cs" />
+    <Compile Include="DTO\Products\Material\MaterialViewModel.cs" />
+    <Compile Include="DTO\Products\Product\PriceTempletAddCmd.cs" />
+    <Compile Include="DTO\Products\Product\PriceTempletOption.cs" />
+    <Compile Include="DTO\Products\Product\PriceTempletViewModel.cs" />
+    <Compile Include="DTO\Products\Product\ProductAddCmd.cs" />
+    <Compile Include="DTO\Products\Product\ProductAttAddCmd.cs" />
+    <Compile Include="DTO\Products\Product\ProductCategoryAddCmd.cs" />
+    <Compile Include="DTO\Products\Product\ProductCategoryOption.cs" />
+    <Compile Include="DTO\Products\Product\ProductCategoryViewModel.cs" />
+    <Compile Include="DTO\Products\Product\ProductDisplayAddCmd.cs" />
+    <Compile Include="DTO\Products\Product\ProductPriceView.cs" />
+    <Compile Include="DTO\Products\Product\ProductViewModel.cs" />
+    <Compile Include="DTO\Products\Product\ProductOption.cs" />
+    <Compile Include="DTO\Report\FinancialStatisticalDetailOption.cs" />
+    <Compile Include="DTO\Report\FinancialStatisticalDetailViewModel.cs" />
+    <Compile Include="DTO\Report\OrderCancelOption.cs" />
+    <Compile Include="DTO\Report\OrderCancelViewModel.cs" />
+    <Compile Include="DTO\Report\OrderCancelDetailOption.cs" />
+    <Compile Include="DTO\Report\RechargeOption.cs" />
+    <Compile Include="DTO\Report\RechargeViewModel.cs" />
+    <Compile Include="DTO\Report\VehicleAchievementDetailOption.cs" />
+    <Compile Include="DTO\Report\EmployeeAchievementDetailOption.cs" />
+    <Compile Include="DTO\Report\OrderCancelDetailViewModel.cs" />
+    <Compile Include="DTO\Report\VehicleAchievementDetailViewModel.cs" />
+    <Compile Include="DTO\Report\EmployeeAchievementDetailViewModel.cs" />
+    <Compile Include="DTO\Report\VehicleAchievementOption.cs" />
+    <Compile Include="DTO\Report\VehicleAchievementViewModel.cs" />
+    <Compile Include="DTO\Report\TimeoutSendOrderOption.cs" />
+    <Compile Include="DTO\Report\TimeoutSendOrderViewModel.cs" />
+    <Compile Include="DTO\Report\FinancialStatisticalOption.cs" />
+    <Compile Include="DTO\Report\FinancialStatisticalViewModel.cs" />
+    <Compile Include="DTO\Report\PayMenthOption.cs" />
+    <Compile Include="DTO\Report\PayMenthViewModel.cs" />
+    <Compile Include="DTO\Report\EmployeeAchievementOption.cs" />
+    <Compile Include="DTO\Report\EmployeeAchievementViewModel.cs" />
+    <Compile Include="DTO\Report\OrderRatingStatisticalOption.cs" />
+    <Compile Include="DTO\Report\BusinessStatisticalOption.cs" />
+    <Compile Include="DTO\Report\OrderRatingStatisticalViewModel.cs" />
+    <Compile Include="DTO\Report\BusinessStatisticalViewModel.cs" />
+    <Compile Include="DTO\Report\FinancialOrderDetailsOption.cs" />
+    <Compile Include="DTO\Report\SourcesOfBusinessStatisticsOption.cs" />
+    <Compile Include="DTO\Report\OrderBusinessOption.cs" />
+    <Compile Include="DTO\Report\FinancialOrderDetailsViewModel.cs" />
+    <Compile Include="DTO\Report\SourcesOfBusinessStatisticsViewModel.cs" />
+    <Compile Include="DTO\Report\OrderBusinessViewModel.cs" />
+    <Compile Include="DTO\Share\ShareRedBindViewModel.cs" />
+    <Compile Include="DTO\Skus\ParameterAddCmd.cs" />
+    <Compile Include="DTO\Skus\PriceListViewModel.cs" />
+    <Compile Include="DTO\Skus\PriceSkuAddCmd.cs" />
+    <Compile Include="DTO\Skus\PriceSkuOption.cs" />
+    <Compile Include="DTO\Skus\ProductPriceAddCmd.cs" />
+    <Compile Include="DTO\Skus\SkuAddCmd.cs" />
+    <Compile Include="DTO\Skus\SkuAreaAddCmd.cs" />
+    <Compile Include="DTO\Skus\SkuPriceAddCmd.cs" />
+    <Compile Include="DTO\Skus\SkuTimeAddCmd.cs" />
+    <Compile Include="DTO\Skus\SkuUnitAddCmd.cs" />
+    <Compile Include="DTO\Skus\TimeSlotAddCmd.cs" />
+    <Compile Include="DTO\Stock\Times.cs" />
+    <Compile Include="DTO\Stock\EmployeeProductViewModel.cs" />
+    <Compile Include="DTO\Stock\StockSettingAdd.cs" />
+    <Compile Include="DTO\Stock\StockOnOption.cs" />
+    <Compile Include="DTO\Stock\StockSettingOption.cs" />
+    <Compile Include="DTO\Stock\StockOutInViewModel.cs" />
+    <Compile Include="DTO\Stock\StockOnViewModel.cs" />
+    <Compile Include="DTO\Stock\StockSettingViewModel.cs" />
+    <Compile Include="DTO\Store\StoreAreaCmd.cs" />
+    <Compile Include="DTO\Store\StoreOption.cs" />
+    <Compile Include="DTO\Store\StoreViewModel.cs" />
+    <Compile Include="DTO\Sys\Role\RoleOption.cs" />
+    <Compile Include="DTO\Sys\Role\UserRoleView.cs" />
+    <Compile Include="Enum\Advertising\AdvertisingPositionEnum.cs" />
+    <Compile Include="Enum\Advertising\AdvertisingTypeEnum.cs" />
+    <Compile Include="Enum\Advertising\AdvertisingChannelEnum.cs" />
+    <Compile Include="Enum\Finance\WithdrawalEnum.cs" />
+    <Compile Include="Enum\Gift\GiftRechargeEnum.cs" />
+    <Compile Include="Enum\Gift\GiftTypeEnum.cs" />
+    <Compile Include="Enum\InventoryEnum.cs" />
+    <Compile Include="Enum\InformationEnum.cs" />
+    <Compile Include="Enum\LanguageEnum.cs" />
+    <Compile Include="Enum\MessageEnum.cs" />
+    <Compile Include="Enum\Order\Refundstatus.cs" />
+    <Compile Include="Enum\Product\PriceTempletStateEnum.cs" />
+    <Compile Include="Enum\Product\ProductChannelEnum.cs" />
+    <Compile Include="Enum\Product\ProductServiceEnum.cs" />
+    <Compile Include="Enum\Product\ProductStateEnum.cs" />
+    <Compile Include="Enum\SkuErrorEnum.cs" />
+    <Compile Include="Enum\Coupon\CouponGroupTypeEnum.cs" />
+    <Compile Include="Enum\Finance\SystemTypeEnum.cs" />
+    <Compile Include="Enum\Finance\BankEnum.cs" />
+    <Compile Include="Enum\Finance\RemittanceTypeEnum.cs" />
+    <Compile Include="Enum\Finance\MethodPaymentEnum.cs" />
+    <Compile Include="Enum\Employee\Marrieds.cs" />
+    <Compile Include="Enum\Employee\WorkingPropertys.cs" />
+    <Compile Include="Enum\CarEnum.cs" />
+    <Compile Include="Enum\MemberLevel.cs" />
+    <Compile Include="Enum\MemberState.cs" />
+    <Compile Include="Enum\Order\AccessChannel.cs" />
+    <Compile Include="Enum\Order\TransactionTypes.cs" />
+    <Compile Include="Enum\Order\EvaluationSoures.cs" />
+    <Compile Include="Enum\Order\WaiterTypes.cs" />
+    <Compile Include="Enum\Order\PayTypes.cs" />
+    <Compile Include="Enum\Order\BusinessChannel.cs" />
+    <Compile Include="Enum\CityAreaEnum.cs" />
+    <Compile Include="Enum\Coupon\CouponState.cs" />
+    <Compile Include="Enum\DeliveryTypeEnum.cs" />
+    <Compile Include="Enum\DelStateEnum.cs" />
+    <Compile Include="Enum\DepartmentEnum.cs" />
+    <Compile Include="Enum\DictionaryEnum.cs" />
+    <Compile Include="Enum\EducationEnum.cs" />
+    <Compile Include="Enum\Employee\EmployeeState.cs" />
+    <Compile Include="Enum\Employee\EmployeeTypeEnum.cs" />
+    <Compile Include="Enum\GenreEnum.cs" />
+    <Compile Include="Enum\InvoiceStateEnum.cs" />
+    <Compile Include="Enum\MaterialState.cs" />
+    <Compile Include="Enum\Order\OrderPriorityEnum.cs" />
+    <Compile Include="Enum\Order\OrderStateEnum.cs" />
+    <Compile Include="Enum\Order\OrderTypeEnum.cs" />
+    <Compile Include="Enum\OtherPayTypeEnum.cs" />
+    <Compile Include="Enum\PaymentStatusEnum.cs" />
+    <Compile Include="Enum\Order\PayStateEnum.cs" />
+    <Compile Include="Enum\Role\DataSetPermissionsEnum.cs" />
+    <Compile Include="Enum\SendTypeEnum.cs" />
+    <Compile Include="Enum\ServiceStateEnum.cs" />
+    <Compile Include="Enum\Employee\SexEnum.cs" />
+    <Compile Include="Enum\SpecialtyEnum.cs" />
+    <Compile Include="Enum\StaffVevelEnum.cs" />
+    <Compile Include="Enum\StoreState.cs" />
+    <Compile Include="Enum\WithdrawalTypeEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Table\Employee\EmployeeInfo.cs" />
+    <Compile Include="Table\Employee\EmployeeServeArea.cs" />
+    <Compile Include="Table\Employee\EmployeeStore.cs" />
+    <Compile Include="Table\Employee\EmployeeBind.cs" />
+    <Compile Include="Table\Employee\EmployeeTime.cs" />
+    <Compile Include="Table\Gift\GiftRechargeBind.cs" />
+    <Compile Include="Table\Invitation\InvitationItem.cs" />
+    <Compile Include="Table\Invitation\InvitationBind.cs" />
+    <Compile Include="Table\Invitation\InvitationPackets.cs" />
+    <Compile Include="Table\Member\MemberLabel.cs" />
+    <Compile Include="Table\Order\OrderLabel.cs" />
+    <Compile Include="Table\Order\OrderExt.cs" />
+    <Compile Include="Table\Order\OrderCacelItem.cs" />
+    <Compile Include="Table\Withdrawal.cs" />
+    <Compile Include="Table\Share\ShareItem.cs" />
+    <Compile Include="Table\Share\ShareRedBind.cs" />
+    <Compile Include="Table\Share\ShareRedPackets.cs" />
+    <Compile Include="Table\Gift\GiftRechargeGive.cs" />
+    <Compile Include="Table\Gift\GiftRechargeThan.cs" />
+    <Compile Include="Table\Gift\GiftRecharge.cs" />
+    <Compile Include="Table\Gift\GiftCoupon.cs" />
+    <Compile Include="Table\Gift\GiftManage.cs" />
+    <Compile Include="Table\Information.cs" />
+    <Compile Include="Table\Channel\Channel.cs" />
+    <Compile Include="Table\Channel\ChanneRelevancy.cs" />
+    <Compile Include="Table\Advertising\AdvertisingImage.cs" />
+    <Compile Include="Table\Advertising\Advertising.cs" />
+    <Compile Include="Table\Message.cs" />
+    <Compile Include="Table\Car.cs" />
+    <Compile Include="Table\Employee\EmployeeLabel.cs" />
+    <Compile Include="Table\Employee\EmployeeServeAreaDetail.cs" />
+    <Compile Include="Table\Finance\CashJournal.cs" />
+    <Compile Include="Table\CityArea.cs" />
+    <Compile Include="Table\Coupon\Coupon.cs" />
+    <Compile Include="Table\Coupon\CouponGroup.cs" />
+    <Compile Include="Table\Coupon\CouponLimit.cs" />
+    <Compile Include="Table\Department.cs" />
+    <Compile Include="Table\Dictionary.cs" />
+    <Compile Include="Table\Employee\Employee.cs" />
+    <Compile Include="Table\Employee\EmployeeProduct.cs" />
+    <Compile Include="Table\Employee\EmployeeTimeDetail.cs" />
+    <Compile Include="Table\MaterialProduct.cs" />
+    <Compile Include="Table\Order\OrderTk.cs" />
+    <Compile Include="Table\Order\OrderCacel.cs" />
+    <Compile Include="Table\Order\OrderMaterial.cs" />
+    <Compile Include="Table\Order\OrderSplit.cs" />
+    <Compile Include="Table\Product\PriceTemplet.cs" />
+    <Compile Include="Table\Product\PriceTempletItem.cs" />
+    <Compile Include="Table\Product\PriceTempletLog.cs" />
+    <Compile Include="Table\Product\PriceTempletTime.cs" />
+    <Compile Include="Table\Product\ProductDisplay.cs" />
+    <Compile Include="Table\Product\SkuArea.cs" />
+    <Compile Include="Table\Product\SkuPrice.cs" />
+    <Compile Include="Table\Product\SkuTime.cs" />
+    <Compile Include="Table\SalaryCar.cs" />
+    <Compile Include="Table\Stock\InventoryOverHistory.cs" />
+    <Compile Include="Table\Stock\InventoryOver.cs" />
+    <Compile Include="Table\Stock\InventoryHistory.cs" />
+    <Compile Include="Table\Stock\PreStock.cs" />
+    <Compile Include="Table\Stock\Inventory.cs" />
+    <Compile Include="Table\Stock\StockSetting.cs" />
+    <Compile Include="Table\Sys\ErrorLog.cs" />
+    <Compile Include="Table\Invoice.cs" />
+    <Compile Include="Table\Material.cs" />
+    <Compile Include="Table\Member\Member.cs" />
+    <Compile Include="Table\Member\MemberAddr.cs" />
+    <Compile Include="Table\Member\MemberBind.cs" />
+    <Compile Include="Table\Member\MemberFamilyInfo.cs" />
+    <Compile Include="Table\Sys\OperateLog.cs" />
+    <Compile Include="Table\Order\OrderItem.cs" />
+    <Compile Include="Table\Order\OrderOperationLog.cs" />
+    <Compile Include="Table\Order\OrderRejectCancel.cs" />
+    <Compile Include="Table\Order\OrderSub.cs" />
+    <Compile Include="Table\Order\Order.cs" />
+    <Compile Include="Table\Order\OrderAddr.cs" />
+    <Compile Include="Table\Order\OrderSpecified.cs" />
+    <Compile Include="Table\Order\OrderPay.cs" />
+    <Compile Include="Table\Order\OrderRating.cs" />
+    <Compile Include="Table\Order\OrderWages.cs" />
+    <Compile Include="Table\Order\OrderWaiter.cs" />
+    <Compile Include="Table\Payment.cs" />
+    <Compile Include="Table\Sys\Permission.cs" />
+    <Compile Include="Table\Product\Product.cs" />
+    <Compile Include="Table\Product\ProductCategory.cs" />
+    <Compile Include="Table\Region.cs" />
+    <Compile Include="Table\Sys\RQuarters.cs" />
+    <Compile Include="Table\Sys\RoleProduct.cs" />
+    <Compile Include="Table\Sys\Role.cs" />
+    <Compile Include="Table\Sys\RolePermission.cs" />
+    <Compile Include="Table\Salary.cs" />
+    <Compile Include="Table\Product\Sku.cs" />
+    <Compile Include="Table\Product\SkuUnit.cs" />
+    <Compile Include="Table\Store\Store.cs" />
+    <Compile Include="Table\Store\StoreProduct.cs" />
+    <Compile Include="Table\Store\StoreProductArea.cs" />
+    <Compile Include="Table\Sys\UserRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HSCP.Core\Conan.Core.csproj">
+      <Project>{6d537600-ff01-4a79-86ca-ff2a3269cc22}</Project>
+      <Name>Conan.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

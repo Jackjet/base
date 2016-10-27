@@ -1,0 +1,36 @@
+﻿//*************************** 
+//文件名称(File Name)： 
+//功能描述(Description)： 员工门店
+//数据表(Tables)：    
+//作者(Author)： conan
+//日期(Create Date)： 2016.05.11
+//参考文档(Reference)(可选)：      
+//引用(Using) (可选)﹕        
+//修改记录(Revision History)：
+//*************************** 
+using System;
+using System.ComponentModel;
+using Conan.Core;
+
+namespace Conan.Model
+{
+    /// <summary>
+    /// 员工门店 职能范围
+    /// </summary>
+    public partial class EmployeeStore : Entity<int>
+    {
+        /// <summary>
+        /// 员工id
+        /// </summary>
+        [Description("员工id")]
+        public virtual int EmployeeId { get; set; }
+
+        /// <summary>
+        /// 门店id
+        /// </summary>
+        [Description("门店id")]
+        public virtual int StoreId { get; set; }
+
+
+    } 
+}
