@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAF0C1BE-682F-48D5-9589-68CEA502BCB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conan.BLL</RootNamespace>
+    <AssemblyName>Conan.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advertising\AdvertisingImageBll.cs" />
+    <Compile Include="Advertising\AdvertisingBll.cs" />
+    <Compile Include="Base\BaseBll.cs" />
+    <Compile Include="Cars\CarBll.cs" />
+    <Compile Include="Channel\ChanneRelevancyBll.cs" />
+    <Compile Include="CityArea\CityAreaBll.cs" />
+    <Compile Include="Coupon\CouponLimitBll.cs" />
+    <Compile Include="Coupon\CouponGroupBll.cs" />
+    <Compile Include="Coupon\CouponBll.cs" />
+    <Compile Include="Dictionary\DictionaryBll.cs" />
+    <Compile Include="Employee\EmployeeServeAreaDetailBLL.cs" />
+    <Compile Include="Employee\EmployeeTimeDetailBLL.cs" />
+    <Compile Include="Employee\EmployeeBindBLL.cs" />
+    <Compile Include="Employee\EmployeeInfoBLL.cs" />
+    <Compile Include="Employee\EmployeeStoreBLL.cs" />
+    <Compile Include="Employee\EmployeeServeAreaBLL.cs" />
+    <Compile Include="Employee\EmployeeLabelBLL.cs" />
+    <Compile Include="Employee\EmployeeTimeBLL.cs" />
+    <Compile Include="Employee\EmployeeProductBLL.cs" />
+    <Compile Include="Employee\EmployeeBLL.cs" />
+    <Compile Include="Finance\InvoiceBll.cs" />
+    <Compile Include="Finance\WithdrawalBll.cs" />
+    <Compile Include="Finance\PaymentBll.cs" />
+    <Compile Include="Finance\CashJournalBll.cs" />
+    <Compile Include="Gift\GiftRechargeBindBll.cs" />
+    <Compile Include="Gift\GiftRechargeGiveBll.cs" />
+    <Compile Include="Gift\GiftRechargeThanBll.cs" />
+    <Compile Include="Gift\GiftRechargeBll.cs" />
+    <Compile Include="Gift\GiftCouponBll.cs" />
+    <Compile Include="Gift\GiftManageBll.cs" />
+    <Compile Include="Information\InformationBll.cs" />
+    <Compile Include="Member\MemberLabelBLL.cs" />
+    <Compile Include="Member\MemberAddrBLL.cs" />
+    <Compile Include="Member\MemberBindBLL.cs" />
+    <Compile Include="Member\MemberBLL.cs" />
+    <Compile Include="Member\MemberFamilyBLL.cs" />
+    <Compile Include="Channel\ChannelBll.cs" />
+    <Compile Include="Message\MessageBll.cs" />
+    <Compile Include="Order\OrderLabelBLL.cs" />
+    <Compile Include="Order\OrderExtBLL.cs" />
+    <Compile Include="Order\OrderTkBLL.cs" />
+    <Compile Include="Order\OrderSplitBLL.cs" />
+    <Compile Include="Order\OrderMaterialBLL.cs" />
+    <Compile Include="Order\OrderCacelBLL.cs" />
+    <Compile Include="Order\OrderCacelItemBLL.cs" />
+    <Compile Include="Order\OrderWaiterBLL.cs" />
+    <Compile Include="Order\OrderWagesBLL.cs" />
+    <Compile Include="Order\OrderSubBLL.cs" />
+    <Compile Include="Order\OrderSpecifiedBLL.cs" />
+    <Compile Include="Order\OrderRejectCancelBLL.cs" />
+    <Compile Include="Order\OrderRatingBLL.cs" />
+    <Compile Include="Order\OrderPayBLL.cs" />
+    <Compile Include="Order\OrderOperationLogBLL.cs" />
+    <Compile Include="Order\OrderItemBLL.cs" />
+    <Compile Include="Order\OrderAddrBLL.cs" />
+    <Compile Include="Order\OrderBLL.cs" />
+    <Compile Include="Products\PriceTempletItemBll.cs" />
+    <Compile Include="Products\PriceTempletBll.cs" />
+    <Compile Include="Products\MaterialBll.cs" />
+    <Compile Include="Products\MaterialProudctBll.cs" />
+    <Compile Include="Products\PriceTempletLogBLL.cs" />
+    <Compile Include="Products\ProductBll.cs" />
+    <Compile Include="Products\ProductCategoryBll.cs" />
+    <Compile Include="Products\ProductDisplayBll.cs" />
+    <Compile Include="Salarys\SalaryCarBll.cs" />
+    <Compile Include="Salarys\SalaryBll.cs" />
+    <Compile Include="Share\InvitationItemBLL.cs" />
+    <Compile Include="Share\InvitationPacketsBLL.cs" />
+    <Compile Include="Share\ShareRedPacketsBLL.cs" />
+    <Compile Include="Share\InvitationBindBLL.cs" />
+    <Compile Include="Share\SShareRedBindBLL.cs" />
+    <Compile Include="Share\ShareItemBLL.cs" />
+    <Compile Include="Sku\SkuAreaBll.cs" />
+    <Compile Include="Sku\SkuPriceBll.cs" />
+    <Compile Include="Sku\SkuTimeBll.cs" />
+    <Compile Include="Sku\SkuUnitBll.cs" />
+    <Compile Include="Sku\SkuBll.cs" />
+    <Compile Include="SMSUitl.cs" />
+    <Compile Include="Stock\InventoryBLL.cs" />
+    <Compile Include="Stock\InventoryOverHistoryBLL.cs" />
+    <Compile Include="Stock\InventoryHistoryBLL.cs" />
+    <Compile Include="Stock\PreStockBLL.cs" />
+    <Compile Include="Stock\InventoryOverBLL.cs" />
+    <Compile Include="Stock\StockSettingBLL.cs" />
+    <Compile Include="Store\DepartmentBll.cs" />
+    <Compile Include="Store\StoreAreaBll.cs" />
+    <Compile Include="Store\StoreBll.cs" />
+    <Compile Include="Store\StoreProductBll.cs" />
+    <Compile Include="Sys\OperateLog\OperateLogBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CityArea\RegionBLL.cs" />
+    <Compile Include="CityArea\RQuartersBLL.cs" />
+    <Compile Include="Sys\Role\RoleProductBLL.cs" />
+    <Compile Include="Sys\Role\UserRoleBLL.cs" />
+    <Compile Include="Sys\Role\RoleBLL.cs" />
+    <Compile Include="Sys\Role\RolePermissionBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HSCP.Core\Conan.Core.csproj">
+      <Project>{6d537600-ff01-4a79-86ca-ff2a3269cc22}</Project>
+      <Name>Conan.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HSCP.DAL\Conan.DAL.csproj">
+      <Project>{9f320f4b-089c-4ca2-9aa5-275c0ea82d60}</Project>
+      <Name>Conan.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HSCP.Model\Conan.Model.csproj">
+      <Project>{67f5859f-cd81-4549-be09-8bd8e5bf4357}</Project>
+      <Name>Conan.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HSCP.Utils\Conan.Utils.csproj">
+      <Project>{47bda866-31f3-4b1e-a6fd-74fda2324a90}</Project>
+      <Name>Conan.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sys\User\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
